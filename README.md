@@ -8,14 +8,14 @@
 To add it to ASP.NET Core configuration simply place .EnableChildSubstitutions() last. Make sure it is always called after all other configurations are added, else it won't behave properly!
 
 ```csharp
-public static IHostBuilder CreateHostBuilder(string[] args) =>
-	Host.CreateDefaultBuilder(args)
-		.ConfigureAppConfiguration((ctx, builder) =>
-		{
-			// if you have any additional configuration place it before
-            var customer = Environment.GetEnvironmentVariable("CUSTOMER");
-			builder.EnableChildSubstitutions(customer);
-		});
+  public static IHostBuilder CreateHostBuilder(string[] args) =>
+      Host.CreateDefaultBuilder(args)
+          .ConfigureAppConfiguration((ctx, builder) =>
+          {
+              // if you have any additional configuration place it before
+              var customer = Environment.GetEnvironmentVariable("CUSTOMER");
+              builder.EnableChildSubstitutions(customer);
+          });
 ```
 
 Set enviroment variable 'Customer' to control which child substitutions are loaded in the configuration.
