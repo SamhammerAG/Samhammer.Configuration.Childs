@@ -34,6 +34,8 @@ If you want to deploy multiple production systems (e.g. different customers) and
 
 #### How to use it
 
+##### Simple Example
+
 Example where the entry ConnectionString has some default value and some substitutions values for different customers.
 
 ```json
@@ -49,6 +51,37 @@ var value = configuration["ConnectionString"];
 ```
 
 This will return 'blabla&catalog=myapp-customer1'.
+
+##### Additional examples
+
+```json
+{
+  "DatabaseOptions ": {
+    "HostName": "host",
+    "CatalogName": "db",
+    "UserName": "user"
+  },
+  "customer1:DatabaseOptions": {
+    "CatalogName": "db1",
+    "UserName": "user1"  
+  }
+}
+```
+
+```json
+{
+  "DatabaseOptions ": {
+    "HostName": "host",
+    "CatalogName": "db",
+    "UserName": "user",
+    
+    "customer1": {
+      "CatalogName": "db1",
+      "UserName": "user1"  
+    }
+  }
+}
+```
 
 ## Contribute
 
