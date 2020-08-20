@@ -1,4 +1,4 @@
-﻿﻿# Samhammer.Configuration.Childs
+# Samhammer.Configuration.Childs
 
 ## Usage
 
