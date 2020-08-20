@@ -22,10 +22,10 @@ Set enviroment variable 'Customer' to control which child substitutions are load
 For local development you can do set in launchsettings.json.
 
 ```json
-   "environmentVariables": {
-     "ASPNETCORE_ENVIRONMENT": "Development",
-     "CUSTOMER": "customer1"
-   }
+"environmentVariables": {
+  "ASPNETCORE_ENVIRONMENT": "Development",
+  "CUSTOMER": "customer1"
+}
 ```
 
 #### When to use it
@@ -38,9 +38,9 @@ Example where the entry ConnectionString has some default value and some substit
 
 ```json
 {
-    "ConnectionString ": "blabla&catalog=myapp",
-    "customer1:ConnectionString ": "blabla&catalog=myapp-customer1",
-    "customer2:ConnectionString ": "blabla&catalog=myapp-customer2",
+  "ConnectionString ": "blabla&catalog=myapp",
+  "customer1:ConnectionString ": "blabla&catalog=myapp-customer1",
+  "customer2:ConnectionString ": "blabla&catalog=myapp-customer2",
 }
 ```
 
