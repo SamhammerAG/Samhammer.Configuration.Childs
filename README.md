@@ -36,7 +36,7 @@ If you want to deploy multiple production systems (e.g. different customers) and
 
 ##### Simple Example
 
-Example where the entry ConnectionString has some default value and some substitutions values for different customers.
+Example where the entry ConnectionString in appsettings.json has some default value and some substitutions values for different customers.
 
 ```json
 {
