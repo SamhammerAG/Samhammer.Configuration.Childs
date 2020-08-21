@@ -30,7 +30,7 @@ For local development you can do set in launchsettings.json.
 
 #### When to use it
 
-If you want to deploy multiple production systems (e.g. different customers) and you don´t want to add additional appsettings.json files or use enviroment variables.
+If you want to deploy multiple production systems (e.g. different customers) and you don´t want to add additional appsettings.json files or additional enviroment variables for all of your settings.
 
 #### How to use it
 
