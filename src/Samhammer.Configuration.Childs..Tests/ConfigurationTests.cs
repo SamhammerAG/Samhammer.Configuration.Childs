@@ -12,7 +12,7 @@ namespace Samhammer.Configuration.Childs.Test
         public void Should_get_value_original()
         {
             var configurationBuilder = new ConfigurationBuilder()
-                .AddInMemoryCollection(new Dictionary<string, string>()
+                .AddInMemoryCollection(new Dictionary<string, string?>
                 {
                     {"ConnectionString", "con1"}
                 })
@@ -30,7 +30,7 @@ namespace Samhammer.Configuration.Childs.Test
         public void Should_get_value_from_root_substitute_section()
         {
             var configurationBuilder = new ConfigurationBuilder()
-                .AddInMemoryCollection(new Dictionary<string, string>()
+                .AddInMemoryCollection(new Dictionary<string, string?>
                 {
                     {"ConnectionString", "con1"},
                     {"{substitute}:ConnectionString", "con2"}
@@ -49,7 +49,7 @@ namespace Samhammer.Configuration.Childs.Test
         public void Should_get_section_value_from_root_substitute_section()
         {
             var configurationBuilder = new ConfigurationBuilder()
-                .AddInMemoryCollection(new Dictionary<string, string>()
+                .AddInMemoryCollection(new Dictionary<string, string?>
                 {
                     {"connection:ConnectionString", "con1"},
                     {"{substitute}:connection:ConnectionString", "con2"}
@@ -67,7 +67,7 @@ namespace Samhammer.Configuration.Childs.Test
         public void Should_get_section_value_from_parent_substitute_section()
         {
             var configurationBuilder = new ConfigurationBuilder()
-                .AddInMemoryCollection(new Dictionary<string, string>()
+                .AddInMemoryCollection(new Dictionary<string, string?>
                 {
                     {"connection:ConnectionString", "con1"},
                     {"connection:{substitute}:ConnectionString", "con2"}
@@ -85,7 +85,7 @@ namespace Samhammer.Configuration.Childs.Test
         public void Should_get_section_childs_including_substitute_child()
         {
             var configurationBuilder = new ConfigurationBuilder()
-                .AddInMemoryCollection(new Dictionary<string, string>()
+                .AddInMemoryCollection(new Dictionary<string, string?>
                 {
                     {"apis:abc", "abc.de"},
                     {"apis:def", "def.de"},
