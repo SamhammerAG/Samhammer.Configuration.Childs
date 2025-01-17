@@ -6,8 +6,8 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <Authors>Samhammer AG</Authors>
     <Company>Samhammer AG</Company>
-    <PackageProjectUrl>https://github.com/SamhammerAG/Samhammer.DependencyInjection</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/SamhammerAG/Samhammer.DependencyInjection</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/SamhammerAG/Samhammer.Configuration.Childs</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SamhammerAG/Samhammer.Configuration.Childs</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Description>Configuration for .NET Core projects</Description>
